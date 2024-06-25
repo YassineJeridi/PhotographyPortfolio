@@ -1,0 +1,142 @@
+/* force scrollbar */
+html {
+  overflow-y: scroll; 
+}
+body {
+
+  font-family: 'Roboto Slab', serif;
+}
+button {
+  height: 40px;
+  width: 100px;
+  margin: 10px auto 10px;
+  background: #000;
+  font-size: 0.8125rem;
+  color: #fff;
+  cursor: pointer;
+  border-color: transparent;
+  border-style: inset;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+button:focus {
+	background-color: #000;
+}
+
+button:hover {
+	color: #930000;
+}
+
+h4,h5{
+	font-family: 'Open Sans', sans-serif;
+}
+
+p{
+	font-family: 'Roboto Slab', serif;
+}
+
+.brand-name {
+  margin: 10px;
+}
+
+.brand-logo{
+  padding-top:8px;
+}
+
+.social {
+	margin: 10px;
+}
+.social > a {
+  padding: 5px;
+  color: #000;
+
+}
+.social > a:hover {
+	color:#0026ff;
+}
+
+.arrow{
+  height: 50px;
+  margin-bottom: -100px;
+  margin-left: 20px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  padding: 3%;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.pictures {
+  transition: transform 0.5s ease-in-out; /* Defines hover effect duration and easing */
+}
+
+.pictures:hover {
+  transform: scale(1.1); /* Scales the image down to 80% of its original size */
+}
+@media(max-width:900px)
+{
+  h1 {
+    font-size: 40px;
+  }
+}
+
+
+/*
+
+:root{--cor-c5:#B2B2B2;--cor-c12:#0D0D0D;}
+cor-w{color:var(--cor-w)}
+.footer-bg{background-color:var(--cor-c12);padding:40px 0 60px 0;align-items: center;text-align: center;}
+.footer{
+  padding:80px 20px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  gap:40px;   
+  display: flex;
+  justify-content: center; 
+  justify-content: space-between;
+  align-items: center; 
+}
+.contacts img{margin-bottom:40px}
+.photos img{width:100%;height:100%;background-size:contain}
+.contacts li+li{margin-top:24px}
+.email,.location,.phone{display:flex;align-items:center;margin-left:25px;position:relative;padding-left:5px}
+.email::before,.location::before,.phone::before{content:'';display:inline;position:absolute}
+.location::before{background-image:url('/icones/location-white.svg');width:24px;height:24px;top:0;left:-30px}
+.email::before{background-image:url('/icones/message-white.svg');left:-30px;width:24px;height:17px}
+.phone::before{background-image:url('/icones/phone-white.svg');width:18px;height:20px;left:-28px;top:0}
+.innerLinks h2{margin-bottom:40px}
+.innerLinks ul li{margin-bottom:16px}
+.innerLinks ul a:hover{color:var(--cor-w)}
+.flick-photos h2{margin-bottom:40px}
+.photos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.photos img{width:100%;object-fit:cover}
+.socials h2{margin-bottom:40px;align-items: center;}
+.icons{display:flex;gap:32px}
+.icons img{width:32px}
+.footer-copy{display:flex;justify-content:center;padding:0 20px;color:var(--cor-c5)}
+@media(max-width:990px)
+{.footer{grid-template-columns:1fr 1fr}}
+@media(max-width:530px){
+.footer{grid-template-columns:1fr;padding:80px 20px 60px 20px}
+.footer-copy{justify-content:flex-start}
+.contacts img,.flick-photos h2,.innerLinks h2,.socials h2{margin-bottom:32px}}
+.font-4-l{font:500 1.25rem/1 Roboto,sans-serif}
+.font-4-l{font:500 1.5rem/1 Roboto,sans-serif} */

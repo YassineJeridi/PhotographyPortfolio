@@ -91,6 +91,12 @@ p{
 .pictures:hover {
   transform: scale(1.1); /* Scales the image down to 80% of its original size */
 }
+@media(max-width:900px)
+{
+  h1 {
+    font-size: 40px;
+  }
+}
 
 /*
 
