@@ -33,7 +33,7 @@ button:focus {
 }
 
 button:hover {
-	color: #9c9c9c;
+	color: #930000;
 }
 
 /*.button {
@@ -67,9 +67,14 @@ p {
 
 }
 .social > a:hover {
-	color: #9c9c9c;
+	color:#0026ff;
 }
 
+.arrow{
+  height: 30px;
+  margin-bottom: -100px;
+  margin-left: 20px;
+}
 
 /* clear fix */
 .grid:after {
@@ -85,7 +90,7 @@ p {
 .grid-item img {
   display: block;
   max-width: 100%;
-  padding: 1%;
+  padding: 3%;
 }
 
 .grid-sizer,
@@ -95,4 +100,11 @@ p {
 
 .footer-text{
 	font-size: 10px;
+}
+.pictures {
+  transition: transform 0.5s ease-in-out; /* Defines hover effect duration and easing */
+}
+
+.pictures:hover {
+  transform: scale(1.1); /* Scales the image down to 80% of its original size */
 }
