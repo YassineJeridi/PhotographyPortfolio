@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-
+    <script src="sender.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -354,10 +355,10 @@
             <div class="form-contact">
                 <h2 class="cor-c15 font-5-xl">Let's Talk!</h2>
                 <h3 class="cor-c10 font-3-l">Tell me about your idea here</h3>
-                <form class="form" action="#">
+                <form class="form" action="" onsubmit=" return sender()">
                     <div>
                         <label class="font-2-s cor-c11" for="nome">Name</label>
-                        <input class="font-3-s cor-c7" type="text" id="nome" name="nome" placeholder="Your name">
+                        <input class="font-3-s cor-c7" type="text" id="name" name="nome" placeholder="Your name">
                     </div>
                     <div>
                         <label class="font-2-s cor-c11" for="email">Email</label>
@@ -367,7 +368,7 @@
                         <label class="font-2-s cor-c11" for="message">Message</label>
                         <textarea  class="font-3-s cor-c7" name="message" id="message" rows="5" cols="10" placeholder="What do you need?"></textarea>
                     </div>
-                    <button class="buttom-2 font-5-m cor-w">Send a Message</button>
+                    <button type="submit" id="btn"class="buttom-2 font-5-m cor-w">Send a Message</button>
                 </form>
                 <ul class="font-2-s cor-10">
                     <li class="location-black">41 Denden manouba, Tunis, Tunisia.</li>
